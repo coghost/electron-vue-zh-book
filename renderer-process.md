@@ -16,7 +16,7 @@
 
 组件都存储在 `src/renderer/components`. 当创建一个新的子组件时, 一个常用的组织技巧是放置在以他们的父组件命名的文件夹之中. 这在协调不同的路由时, 会相当有用. `(译注: 当然你完全可以自己命名, 效果一样)`
 
-```
+```bash
 src/renderer/components
 ├─ ParentComponentA
 │  ├─ ChildComponentA.vue

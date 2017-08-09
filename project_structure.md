@@ -1,25 +1,25 @@
-# 项目架构
+# 项目结构
 
-当需要制作 `electron apps` 时, 项目架构会有一点变动. 如果你之前有使用过官方的 [`vuejs-templates/webpack`](https://github.com/vuejs-templates/webpack) 的设置, 那么这个架构, 你会看起来相当熟悉. 这部分文档会对于框架如何工作及在编译过程的不同之处给出一个大概的描述.
+当需要开发 `electron apps` 时, 项目结构会有一点变动. 如果你之前有使用过官方的 [`vuejs-templates/webpack`](https://github.com/vuejs-templates/webpack) 的设置, 那么这个架构, 你会看起来相当熟悉. 这部分文档会对于框架如何工作及在编译过程的不同之处给出一个大概的描述.
 
 ### 单 `package.json` 配置
 
-不久之前, 两个独立的 `package.json` 文件仍然是必需的, 但是多亏了 [@electron-userland](https://github.com/electron-userland), 现在 [`electron-packager`](https://github.com/electron-userland/electron-packager) 和 [`electron-builder`](https://github.com/electron-userland/electron-builder) 都已经全部支持了使用单 `package.json` 来配置
+不久之前, 两个独立的 `package.json` 文件仍然是必需的, 但是多亏了 [@electron-userland](https://github.com/electron-userland), 现在 [`electron-packager`](https://github.com/electron-userland/electron-packager) 和 [`electron-builder`](https://github.com/electron-userland/electron-builder) 全部都支持了使用单 `package.json` 来配置
 
 #### `dependencies: 运行依赖`
 
 这些依赖`会`出现在最终的产品之内. 因此,如果你的程序需要某个特定的模块来运行, 安装在这里
 
-```
+```bash
 npm i <module> --save
 ```
 
-#### `devDependencies`
+#### `devDependencies: 开发依赖`
 
 这些依赖`不会`出现在你最终发布的产品之中. 在这里, 你可以安装开发过程中所有需要的包比如 `webpack` 等.`(打包时,不会增加打包大小)`
 
 
-```
+```bash
 npm i <module> --save-dev
 ```
 

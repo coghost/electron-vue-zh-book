@@ -16,4 +16,4 @@
 
 ### `.electron-vue/webpack.web.config.js`
 
-定位于编译你的 `renderer进程` 代码为可在浏览器中运行. 这个配置文件基于你确实需要发布 web 应用. ** electron-vue 并不支持走出其提供范围的 web 输出.** 而`web输出`的相关问题很有可能会被推迟或者关闭.
+定位于编译你的 `renderer进程` 代码为可在浏览器中运行. 这个配置文件基于你确实需要发布 web 应用. ** electron-vue 并不支持超出其提供支持范围的 web 输出.** 而`web输出`的相关问题很有可能会被推迟或者关闭.

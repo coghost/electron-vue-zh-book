@@ -4,7 +4,7 @@
 
 **注意**: 基于 `vue-cli` 的配置过程的不同, 某些文件/夹可能会不一致.
 
-```
+```bash
 my-project
 ├─ .electron-vue
 │  └─ <build/development>.js files

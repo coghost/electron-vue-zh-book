@@ -19,10 +19,10 @@
 ## 关于 `__dirname/__filename` 的使用
 
 由于 `main process` 会被 `webpack` 打包, 所有在产品环境中使用 `__dirname/__filename` 并不能达到预期的目标. 参考: [**File Tree**](/file-tree.md), 你会发现在产品环境中 `main.js` 是放置于 `dist/electron` 目录中. 基于此, 正确的使用 `__dirname/__filename`.
-**如果你需要使用你的 `static/` 目录, 请详细阅读 **[**Using Static Assets**](/using-static-assets.md)** 来获取关于 `超级方便的 __static` 变量.**
+**如果你需要使用你的 `static/` 目录, 请详细阅读 **[**使用静态资源**](/using-static-assets.md)** 来获取关于 `超级方便的 __static` 变量.**
 
 
-```sh
+```bash
 app.asar
 ├─ dist
 │  └─ electron
