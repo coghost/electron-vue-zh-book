@@ -1,0 +1,1 @@
+[参考原英文文档](https://simulatedgreg.gitbooks.io/electron-vue/content/en/new-releases.html)
